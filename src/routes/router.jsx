@@ -3,6 +3,7 @@ import Welcome from "../pages/Welcome";
 import MainPageLayout from "../layout/MainPageLayout";
 import HomePage from "../pages/HomePage";
 import NewPostPage from "../pages/NewPostPage";
+import AllUsers from "../api/AllUsers";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const mainRoute = createBrowserRouter([
       {
         path: "/newpost",
         element: <NewPostPage />,
+      },
+      {
+        path: "/userapi",
+        element: <AllUsers />,
       },
     ],
   },
